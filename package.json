@@ -3,6 +3,7 @@
   "displayName": "Exograph",
   "description": "Syntax highlighting support for Exograph projects",
   "version": "0.0.1",
+  "icon": "images/exograph.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/exograph/exograph.git"
