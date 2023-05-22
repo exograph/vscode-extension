@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/exograph/exograph.git"
   },
+  "publisher": "exograph",
   "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.57.0"
