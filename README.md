@@ -1,6 +1,6 @@
 # Exograph Language Support
 
-This extension provides syntax highlighting for Exograph files (the ".exo" extension) and Exograph code blocks in Markdown files.
+This extension provides syntax highlighting for Exograph files (the ".exo" and ".exotest" extensions) and Exograph code blocks in Markdown files.
 
 ## Installation
 
