@@ -1,7 +1,7 @@
 @postgres
 module ConcertVenues {
   @table("concerts")
-  @access(query=AuthContext.role == "ROLE_ADMIN" || self.published || price <= 10, 
+  @access(query=AuthContext.role == "ROLE_ADMIN" || self.published || (price <= 10 && price >= 5), 
           mutation=AuthContext.role == "ROLE_ADMIN")
   type Concert {
     @pk id: Int = autoIncrement() // comment after annotation
@@ -19,6 +19,16 @@ module ConcertVenues {
     published: Boolean
     occupancy: Int = 200 // highlighting of numbers in default field
     @singlePrecision latitude: Floatq
+  }
+
+  @access(
+    query = AuthContext.role == "admin"|| self.documentUsers.some(du => du.userId == AuthContext.id && du.read),
+    mutation = AuthContext.role == "admin" || self.documentUsers.some(du => du.userId == AuthContext.id && du.write)
+  )  
+  type Document {
+    @pk id: Int = autoIncrement()
+    content: String
+    documentUsers: Set<DocumentUser>
   }
 }
 

@@ -198,6 +198,15 @@
         },
         {
           "include": "#comments"
+        },
+        {
+          "begin": "(\\()",
+          "patterns": [
+            {
+              "include": "#expressions"
+            }
+          ],
+          "end": "(\\))"
         }
       ]
     },
