@@ -29,8 +29,8 @@
         ],
         "configuration": "./src/language-configuration.json",
         "icon": {
-          "light": "./src/icon.svg",
-          "dark": "./src/icon.svg"
+          "light": "./src/icon.png",
+          "dark": "./src/icon.png"
         }
       },
       {
