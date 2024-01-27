@@ -27,7 +27,11 @@
         "extensions": [
           ".exo"
         ],
-        "configuration": "./src/language-configuration.json"
+        "configuration": "./src/language-configuration.json",
+        "icon": {
+          "light": "./src/icon.svg",
+          "dark": "./src/icon.svg"
+        }
       },
       {
         "id": "graphql",

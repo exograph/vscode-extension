@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="204.8377 221.9701 81.9774 88.419" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter0_d_405_23" x="8.31742" y="84.0551" width="61.1791" height="42.0535" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="3.16" />
+      <feGaussianBlur stdDeviation="3.08" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_405_23" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_405_23" result="shape" />
+    </filter>
+    <filter id="filter1_d_405_23" x="19.1154" y="31" width="30.1697" height="100.739" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="3.16" />
+      <feGaussianBlur stdDeviation="3.08" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_405_23" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_405_23" result="shape" />
+    </filter>
+    <filter id="filter2_d_405_23" x="8.36246" y="39.1329" width="93.9935" height="65.2356" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="3.16" />
+      <feGaussianBlur stdDeviation="3.08" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_405_23" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_405_23" result="shape" />
+    </filter>
+    <filter id="filter3_d_405_23" x="51.9785" y="60.8857" width="50.6363" height="46.6022" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="3.16" />
+      <feGaussianBlur stdDeviation="3.08" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_405_23" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_405_23" result="shape" />
+    </filter>
+  </defs>
+  <g filter="url(#filter0_d_405_23)" transform="matrix(1, 0, 0, 1, 190.36029052734378, 187.97006225585938)">
+    <path d="M15.4495 113.233C13.1678 109.313 15.0758 104.285 19.3674 102.818C40.6592 95.5381 43.1572 93.9515 55.9877 87.0551L63.3365 98.1679C50.8693 105.648 47.3436 106.962 24.346 116.263C21.042 117.6 17.2425 116.313 15.4495 113.233V113.233Z" fill="#F06060" />
+  </g>
+  <g filter="url(#filter1_d_405_23)" transform="matrix(1, 0, 0, 1, 190.36029052734378, 187.97006225585938)">
+    <path d="M35.9033 34C40.4704 34 43.8645 38.2195 42.9862 42.7012C37.6246 70.0574 37.4313 85.8713 42.9501 113.697C43.8398 118.182 40.449 122.419 35.8761 122.419V122.419C32.3752 122.419 29.3801 119.881 28.8355 116.422C24.0589 86.0896 24.1154 70.4738 28.8455 40.0261C29.385 36.5534 32.389 34 35.9033 34V34Z" fill="#6B8FEB" />
+  </g>
+  <g filter="url(#filter2_d_405_23)" transform="matrix(1, 0, 0, 1, 190.36029052734378, 187.97006225585938)">
+    <path d="M95.2683 91.5028C93.0095 95.4477 87.6573 96.2313 84.2749 93.1942C63.8861 74.8868 47.9049 65.4614 19.5965 56.2162C15.222 54.7876 13.1829 49.709 15.4696 45.7156V45.7156C17.1799 42.7287 20.7871 41.3793 24.0216 42.5559C53.6407 53.3303 68.908 63.0666 93.5426 82.5306C96.26 84.6777 96.9893 88.4974 95.2683 91.5028V91.5028Z" fill="#31C36F" />
+  </g>
+  <g filter="url(#filter3_d_405_23)" transform="matrix(1, 0, 0, 1, 190.36029052734378, 187.97006225585938)">
+    <path d="M58.1385 85.8003C67.8848 79.6882 65.9083 81.0361 85.1823 65.4297C88.1516 63.0254 92.5258 63.4768 94.9243 66.4509V66.4509C97.4276 69.555 96.7804 74.1288 93.5656 76.4882C79.1246 87.0865 75.743 90.9988 63.1572 98.1679L60.7493 92.251L58.1385 85.8003Z" fill="#F06060" />
+  </g>
+  <path d="M 234.697 281.477 C 243.3 276.817 248.14 274.128 255.13 269.647 L 263.359 279.971 C 256.206 285.062 249.753 288.468 240.359 293.471 L 240.301 293.392 C 237.697 289.811 235.795 285.767 234.697 281.477 Z" fill="#F06060" transform="matrix(1, 0, 0, 1, 0, 7.105427357601002e-15)" />
+</svg>
