@@ -9,6 +9,12 @@ module ConcertVenues {
     @column("venueid") venue: Venue 
     published: Boolean
     @precision(20) @scale(2) price: Decimal 
+    ...ConcertFragment
+  }
+
+  fragment ConcertFragment {
+    foo: String
+    bar: Int
   }
 
   @table("venues")

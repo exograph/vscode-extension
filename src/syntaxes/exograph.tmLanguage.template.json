@@ -83,11 +83,19 @@
         }
       ]
     },
+    "fragment-reference": {
+      "patterns": [
+        {
+          "name": "meta.fragment-reference.exograph",
+          "match": "\\.\\.\\.{{identifier}}"
+        }
+      ]
+    },
     "type-definition": {
       "patterns": [
         {
           "name": "meta.typedef.exograph",
-          "begin": "(type){{ws}}({{identifier}}){{opt_ws}}{?",
+          "begin": "(type|fragment){{ws}}({{identifier}}){{opt_ws}}{?",
           "beginCaptures": {
             "1": {
               "name": "keyword.type.exograph"
