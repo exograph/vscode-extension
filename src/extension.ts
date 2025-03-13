@@ -74,9 +74,6 @@ function startLspClient(context: ExtensionContext) {
   client.start();
 }
 
-
-
-
 function getExoLspEnabled() {
   return workspace.getConfiguration().get(EXO_LSP_ENABLED_KEY, false);
 }

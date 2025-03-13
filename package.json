@@ -64,7 +64,7 @@
         "exograph.lsp.enabled": {
           "type": "boolean",
           "default": false,
-          "description": "Enable/disable the Exograph Language Server"
+          "description": "Enable the experimental Exograph Language Server"
         }
       }
     }
