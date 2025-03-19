@@ -2,7 +2,7 @@
   "name": "exograph",
   "displayName": "Exograph",
   "description": "Syntax highlighting support for Exograph projects",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "icon": "images/exograph.png",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
   "publisher": "exograph",
   "license": "Apache-2.0",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.98.0"
   },
   "categories": [
     "Programming Languages"
