@@ -9,7 +9,8 @@
 ## Debugging the extension
 
 1. Press the "Debug" button (the triangle on the left side) or Press `F5` to open a new window with your extension loaded. Then, run the extension.
-2. In the window opened by the debugger, open `example.exo`, `example.md`, and `example.exotest` to check the correctness of syntax highlighting.
+2. In the window opened by the debugger, open `index.exo`, `example.md`, and `example.exotest` in the `sample-project` to check the correctness of syntax highlighting.
+3. Enable Exograph Language Server through VS code settings. This will enable the language server to provide diagnostics.
 
 ## Making changes
 

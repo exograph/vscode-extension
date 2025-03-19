@@ -4,12 +4,16 @@
       "args": [
         "--extensionDevelopmentPath=${workspaceFolder}"
       ],
-      "name": "Launch Extension",
+      "name": "Exograph Extension",
       "outFiles": [
         "${workspaceFolder}/out/**/*.js"
       ],
       "request": "launch",
-      "type": "extensionHost"
+      "type": "extensionHost",
+      "env": {
+        "EXO_LSP_SERVER_PATH": "${workspaceFolder}/../lsp-server/target/debug/exo-lsp",
+        "EXO_LSP_LOG": "debug"
+      }
     }
   ]
 }

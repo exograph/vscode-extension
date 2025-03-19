@@ -2,7 +2,7 @@
   "name": "exograph",
   "displayName": "Exograph",
   "description": "Syntax highlighting support for Exograph projects",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "icon": "images/exograph.png",
   "repository": {
     "type": "git",
@@ -11,11 +11,12 @@
   "publisher": "exograph",
   "license": "Apache-2.0",
   "engines": {
-    "vscode": "^1.57.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Programming Languages"
   ],
+  "main": "./out/extension.js",
   "contributes": {
     "languages": [
       {
@@ -56,10 +57,29 @@
           "meta.embedded.block.exo": "exo"
         }
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Exograph",
+      "properties": {
+        "exograph.lsp.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable the experimental Exograph Language Server"
+        }
+      }
+    }
   },
   "scripts": {
-    "build": "node build.js",
-    "vscode:prepublish": "npm run build"
+    "build": "node build.js && tsc -p ./",
+    "vscode:prepublish": "npm run build",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "vscode-languageclient": "9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.10",
+    "@types/vscode": "^1.98.0",
+    "typescript": "^5.8.2"
   }
 }

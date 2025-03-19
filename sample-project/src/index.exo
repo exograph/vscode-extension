@@ -1,3 +1,7 @@
+context IPContext {
+  @ip source: String
+}
+
 @postgres
 module ConcertVenues {
   @table("concerts")
@@ -14,7 +18,7 @@ module ConcertVenues {
 
   fragment ConcertFragment {
     foo: String
-    bar: Int
+    barx: Int
   }
 
   @table("venues")
@@ -55,13 +59,14 @@ context AuthContext {
   @jwt("role") role: String 
 }
 
+@deno("my-module.ts")
 module MyModule {
-  export mutation foo(i: Int, zz: String): number
+  // export mutation foo(i: Int, zz: String): number
 
   query get_this(in: Concert_Info): Concert
   query get_this_too(in: Concert_Info): Concert_Output
 
-  mutation foo(input: FooInput): xx // To test that methods separated by a single line break hightlight correctly
+  mutation foo(input: FooInput): xx // To test that methods separated by a single line break highlight correctly
   mutation bar(input: FooInput): xx 
   mutation baz(input: FooInput): xx // xx
 }
@@ -70,14 +75,14 @@ module MyModule {
 module ConcertNotificationModule {
   export mutation sendNotification(
     concertNotificationId: Int, subscriptionGroupId: Int,
-    @injected exo: Exo, @injected emailModule: EmailModule
-  ): Result<bool, bool>
+    @inject exo: Exograph, @inject emailModule: IPContext
+  ): Boolean
 }
 
 @deno("rate_limiter.ts")
 module RateLimiter {
   @around("query * || mutation *")
-  interceptor checkLimit(ipContext: IPContext, operation: Operation): OperationResult
+  interceptor checkLimit(ipContext: IPContext, operation: Operation)
 }
 
 @deno("authentication.wasm") // or ".so" or ".js" or ".ts"
@@ -102,5 +107,5 @@ module Authentication {
     info: String
   }
 
-  export mutation authenticate(loginInfo: LoginInput, @inject exograph: Exograph): Result<String, LoginError>
+  export mutation authenticate(loginInfo: LoginInput, @inject exograph: Exograph): LoginError
 }
