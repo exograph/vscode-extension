@@ -1,3 +1,4 @@
+import * as path from "path";
 import { workspace, ExtensionContext } from 'vscode';
 import {
   LanguageClient,
@@ -43,7 +44,8 @@ function startLspClient(context: ExtensionContext) {
     return;
   }
 
-  const command = process.env.EXO_LSP_SERVER_PATH || "exo-lsp";
+  // If the EXO_LSP_SERVER_PATH environment variable is not set, use it from the default installation location $HOME/.exograph/bin/exo-lsp
+  const command = process.env.EXO_LSP_SERVER_PATH || (process.env.HOME ? path.join(process.env.HOME, '.exograph/bin/exo-lsp') : "exo-lsp");
   const logLevel = process.env.EXO_LSP_LOG || "warn";
 
   const serverOptions: ServerOptions = {
