@@ -95,7 +95,7 @@
       "patterns": [
         {
           "name": "meta.typedef.exograph",
-          "begin": "(type|fragment){{ws}}({{identifier}}){{opt_ws}}{?",
+          "begin": "(type|fragment|enum){{ws}}({{identifier}}){{opt_ws}}{?",
           "beginCaptures": {
             "1": {
               "name": "keyword.type.exograph"
@@ -166,9 +166,6 @@
           "patterns": [
             {
               "include": "#functions"
-            },
-            {
-              "include": "#model-definition"
             },
             {
               "include": "#type-definition"
