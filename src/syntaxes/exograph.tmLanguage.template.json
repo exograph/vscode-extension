@@ -83,6 +83,19 @@
         }
       ]
     },
+    "enum-variant": {
+      "patterns": [
+        {
+          "name": "meta.member.exograph",
+          "match": "({{identifier}}){{opt_ws}}?",
+          "captures": {
+            "1": {
+              "name": "entity.other.attribute-name.exograph"
+            }
+          }
+        }
+      ]
+    },
     "fragment-reference": {
       "patterns": [
         {
@@ -95,7 +108,7 @@
       "patterns": [
         {
           "name": "meta.typedef.exograph",
-          "begin": "(type|fragment|enum){{ws}}({{identifier}}){{opt_ws}}{?",
+          "begin": "(type|fragment){{ws}}({{identifier}}){{opt_ws}}{?",
           "beginCaptures": {
             "1": {
               "name": "keyword.type.exograph"
@@ -110,6 +123,34 @@
             },
             {
               "include": "#field-default-value"
+            },
+            {
+              "include": "#annotations"
+            },
+            {
+              "include": "#comments"
+            }
+          ],
+          "end": "}"
+        }
+      ]
+    },
+    "enum-definition": {
+      "patterns": [
+        {
+          "name": "meta.typedef.exograph",
+          "begin": "(enum){{ws}}({{identifier}}){{opt_ws}}{?",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.type.exograph"
+            },
+            "2": {
+              "name": "entity.name.class.exograph"
+            }
+          },
+          "patterns": [
+            {
+              "include": "#enum-variant"
             },
             {
               "include": "#annotations"
@@ -169,6 +210,9 @@
             },
             {
               "include": "#type-definition"
+            },
+            {
+              "include": "#enum-definition"
             },
             {
               "include": "#annotations"
